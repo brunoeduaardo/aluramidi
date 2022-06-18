@@ -5,10 +5,18 @@ function tocarPom(){
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
+let contador = 0;
 
-listaDeTeclas[0].onclick=tocarPom
 
 
+// while = enquanto
+while(contador < 9){
+    listaDeTeclas[contador].onclick = tocarPom
+
+    contador = contador + 1;
+
+    console.log(contador);
+}
 
 /*
     Código para cada botão. No caso de um código que terá muitos botões parecidos, ficaria inviável
